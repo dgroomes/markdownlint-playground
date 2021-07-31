@@ -1,0 +1,14 @@
+{
+  "name": "runner",
+  "version": "0.1.0",
+  "description": "A 'runner' program to run markdownlint with custom lint rules against my project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lint-rules": "file:../lint-rules/lint-rules-0.1.0.tgz"
+  }
+}
