@@ -11,7 +11,12 @@ let file = process.argv[2]
 // its type. The beckon of TypeScript is strong!
 const options = {
     files: [file],
-    config: require("markdownlint/style/all.json"), // Configuration docs: https://github.com/DavidAnson/markdownlint#optionsconfig
+    customRules: [require("lint-rules/src/ListAlignmentRule")],
+    config: {  // Configuration docs: https://github.com/DavidAnson/markdownlint#optionsconfig
+        comment: "Using our custom lint rules",
+        default: false,
+        "dgroomes-list-alignment": true
+    }
 };
 
 let lintResults = markdownlint.sync(options);
