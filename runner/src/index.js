@@ -6,9 +6,13 @@ if (process.argv.length !== 3) {
 
 let file = process.argv[2]
 
+// I wish the IDE knew that this was markdownlint's "Options" type so that it would offer code completion! There doesn't
+// seem a way in Webstorm/Intellij to annotate a local variable declaration with something like an inline comment to show
+// its type. The beckon of TypeScript is strong!
 const options = {
-    "files": [file]
+    files: [file],
+    config: require("markdownlint/style/all.json"), // Configuration docs: https://github.com/DavidAnson/markdownlint#optionsconfig
 };
 
 let lintResults = markdownlint.sync(options);
-console.log({lintResults})
+console.log(`Lint results: ${JSON.stringify(lintResults, null, 2)}`)
