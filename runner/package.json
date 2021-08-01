@@ -9,6 +9,7 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "lint-rules": "file:../lint-rules/lint-rules-0.1.0.tgz"
+    "lint-rules": "file:../lint-rules/lint-rules-0.1.0.tgz",
+    "markdownlint": "^0.23.1"
   }
 }
