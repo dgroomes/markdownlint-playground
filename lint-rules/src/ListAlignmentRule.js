@@ -11,11 +11,12 @@ let listAlignmentRuleObject = {
 function listAlignmentRuleFn(params, onError) {
     for (let token of params.tokens) {
         // todo find violating elements
-        // onError({
-        //     lineNumber: token.lineNumber,
-        //     detail: "List element indentation violation. Elements with different indentations will cause misalignment.",
-        //     context: token.line.substr(0, 7)
-        // });
+        onError({
+            lineNumber: token.lineNumber,
+            detail: "List element indentation violation. Elements with different indentations will cause misalignment.",
+            context: token.line.substr(0, 7)
+        });
+        break;
     }
 }
 
