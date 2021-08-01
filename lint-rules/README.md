@@ -1,7 +1,5 @@
 # lint-rules
 
-NOT YET FULLY IMPLEMENTED
-
 Custom lint rules for 'markdownlint'.
 
 ## Instructions
@@ -10,7 +8,7 @@ This package should be built and "packed" with the `npm pack` command so that it
 don't have a need to publish this to the npm Registry.
 
 1. "Pack" the library 
-   * `npm pack`
+   *  `npm pack`
     
 ## Lint Rules
 
@@ -40,17 +38,17 @@ rendered HTML:
    1. Nested `ol` (three leading spaces to clear the parent string `1. `)
    *  Nested `ul` (unordered element) (three leading spaces and two trailing spaces after the `*` to clear the `1.` string
       of `ol` elements at the same level)
-    * Nested list element NOT ALIGNED (there is one space extra in leading indentation)  
+    *  Nested list element NOT ALIGNED (there is one space extra in leading indentation)  
    * Nested list element NOT ALIGNED (there needs to be another trailing space after the `*`)
-     * Doubly nested `ul` NOT ALIGNED (there needs to be another leading space before the `*`)
+     *  Doubly nested `ul` NOT ALIGNED (there needs to be another leading space before the `*`)
 
 * Top-level `ul` NOT ALIGNED (there needs to be another trailing space after the `*`)
-   * Nested `ul`
+   *  Nested `ul`
 
 **END**
 
 ## Reference
 
-* [Blog Post: *Testing npm packages before publishing*](https://medium.com/@vcarl/problems-with-npm-link-and-an-alternative-4dbdd3e66811)
-   * This blog post makes a good case for the `npm pack` command in favor of `npm link`.
-* [`markdownlint`: *Custom Rules*](https://github.com/DavidAnson/markdownlint/blob/main/doc/CustomRules.md)
+*  [Blog Post: *Testing npm packages before publishing*](https://medium.com/@vcarl/problems-with-npm-link-and-an-alternative-4dbdd3e66811)
+   *  This blog post makes a good case for the `npm pack` command in favor of `npm link`.
+*  [`markdownlint`: *Custom Rules*](https://github.com/DavidAnson/markdownlint/blob/main/doc/CustomRules.md)

@@ -21,8 +21,7 @@ const options = {
 
 let lintResults = markdownlint.sync(options);
 console.log(`Lint results: ${JSON.stringify(lintResults, null, 2)}`)
-for (let key of Object.getOwnPropertyNames(lintResults)) {
-    let value = lintResults[key]
+for (let [, value] of Object.entries(lintResults)) {
     if (value.length > 0) {
         console.error("❌ Markdown lint violations detected!")
         process.exit(1) // There was a lint violation! Exit with an error status code

@@ -1,7 +1,5 @@
 # markdownlint-playground
 
-NOT YET IMPLEMENTED
-
 📚 Learning and exploring [`markdownlint`](https://github.com/DavidAnson/markdownlint>).
 
 ## Why?
