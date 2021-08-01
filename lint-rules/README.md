@@ -36,6 +36,16 @@ rendered HTML:
   is not nice! While this Markdown will render perfectly fine, the raw Markdown is not aligned. The lint rule should find
   an error for this element.
 
+1. Top-level `ol` (ordered element)
+   1. Nested `ol` (three leading spaces to clear the parent string `1. `)
+   *  Nested `ul` (unordered element) (three leading spaces and two trailing spaces after the `*` to clear the `1.` string
+      of `ol` elements at the same level)
+    * Nested `ul` NOT ALIGNED (there is one space extra in leading indentation)  
+   * Nested `ul` NOT ALIGNED (there needs to another trailing space after the `*`)
+
+* Top-level `ul` NOT ALIGNED
+   * Nested `ul`.
+
 **END**
 
 ## Reference
