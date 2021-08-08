@@ -16,4 +16,12 @@ This repo breaks down into sub-projects:
 
 ### `lint-rules/`
 
+Custom lint rules for 'markdownlint'.
+
+See the README in [lint-rules/](lint-rules/).
+
 ### `runner/`
+
+A 'runner' program to run markdownlint with custom lint rules against my project.
+
+See the README in [runner/](runner/).

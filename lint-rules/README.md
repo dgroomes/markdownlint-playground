@@ -47,6 +47,20 @@ rendered HTML:
 
 **END**
 
+## Wish list
+
+General clean ups, TODOs and things I wish to implement for this project:
+
+* Implement an "Intellij autoformatting" lint rule.
+  * This lint rule should identify violations for a Markdown file where Intellij's built-in autoformatting would make a
+    formatting change. For example, when you auto format a Markdown file in Intellij, it will make sure that there is exactly
+    one space after the `*` character in a list element. This is different from my other custom rule! I want to stick to
+    this convention actually because I like it fine, and I like to use Intellij's defaults so I can minimize the customizations
+    I make in my own workflow. The fewer arbitrary customizations, the better. The more consistency in formatting across
+    my Markdown files, the better.
+* Install `runner` as a bin on the PATH.
+  * How? There should be a way with npm and the package.json to do this.
+
 ## Reference
 
 *  [Blog Post: *Testing npm packages before publishing*](https://medium.com/@vcarl/problems-with-npm-link-and-an-alternative-4dbdd3e66811)
