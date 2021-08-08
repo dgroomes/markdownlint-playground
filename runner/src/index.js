@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const markdownlint = require("markdownlint");
+const printResult = require("./lint-output")
 
 if (process.argv.length !== 3) {
     throw new Error("Usage: node . <file>")
@@ -70,7 +71,7 @@ const options = {
 };
 
 let lintResults = markdownlint.sync(options);
-console.log(`Lint results: ${JSON.stringify(lintResults, null, 2)}`)
+printResult(lintResults)
 for (let [, value] of Object.entries(lintResults)) {
     if (value.length > 0) {
         console.error("❌  Markdown lint violations detected!")

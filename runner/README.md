@@ -21,6 +21,8 @@ General clean ups, TODOs and things I wish to implement for this project:
 
 *  DONE Install `runner` as a bin on the PATH.
    *  How? There should be a way with npm and the package.json to do this.
+*  IN PROGRESS Print the lint violations in an easy-to-read format
+   * Consider color, lowlighting, highlighting, indentation
 
 ## Reference
 
