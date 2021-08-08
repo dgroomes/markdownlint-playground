@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const markdownlint = require("markdownlint");
 
 if (process.argv.length !== 3) {

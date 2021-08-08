@@ -58,8 +58,6 @@ General clean ups, TODOs and things I wish to implement for this project:
     this convention actually because I like it fine, and I like to use Intellij's defaults so I can minimize the customizations
     I make in my own workflow. The fewer arbitrary customizations, the better. The more consistency in formatting across
     my Markdown files, the better.
-* Install `runner` as a bin on the PATH.
-  * How? There should be a way with npm and the package.json to do this.
 
 ## Reference
 
