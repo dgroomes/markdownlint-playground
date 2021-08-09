@@ -15,6 +15,6 @@
     "markdownlint": "^0.23.1"
   },
   "bin": {
-    "md-lint": "src/index.js"
+    "md-lint": "runner.sh"
   }
 }

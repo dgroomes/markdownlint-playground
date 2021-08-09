@@ -3,8 +3,14 @@
 const markdownlint = require("markdownlint");
 const printResult = require("./lint-output")
 
-if (process.argv.length !== 3) {
-    throw new Error("Usage: node . <file>")
+const expectedArgs = 1
+let foundArgs = process.argv.length - 2; // The first two args will always be 1) `node` and 2) the name of the JavaScript source file or `.`. These can be ignored.
+if (foundArgs !== expectedArgs) {
+    console.error(`
+Improper usage. Expected ${expectedArgs} arguments but found ${foundArgs} 
+Usage: <file>
+`)
+    process.exit(1)
 }
 
 let file = process.argv[2]
