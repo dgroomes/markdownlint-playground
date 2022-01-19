@@ -1,5 +1,17 @@
 # runner
 
+---
+**OBSOLETE**
+
+This `runner/` module is obsolete since [`markdownlint-cli2` added support for a configurable path to a configuration file](https://github.com/DavidAnson/markdownlint-cli2/issues/8).
+See my [detailed comment on the GitHub issue](https://github.com/DavidAnson/markdownlint-cli2/issues/8#issuecomment-890687861).
+The feature was merged in January 2021.
+
+I'll keep the `runner/` module around for posterity and because I want a reference for myself about how to make a Node-based
+CLI in this particular style: a shell-based runner script and a dependency to an NPM `pack`ed module.
+
+---
+
 A "runner" program to run markdownlint with custom lint rules against a markdown file.
 
 ## Instructions
